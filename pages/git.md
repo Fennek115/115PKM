@@ -18,3 +18,14 @@
 	  # para cambiar el nombre de la rama main
 	  git branch -m main
 	  ```
+- trabajando con git
+	- ```bash
+	  # para comprobar
+	  git status
+	  # para añadir los archivos
+	  git add <el archivo>
+	  # para hacer el comit y agregar un mensaje
+	  git commit -m "un commit zzz"
+	  # para ver los logs
+	  git log
+	  ```
