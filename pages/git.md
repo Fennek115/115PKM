@@ -29,3 +29,15 @@
 	  # para ver los logs
 	  git log
 	  ```
+- volver a versiones anteriores
+	- ```bash
+	  # volver a una version anterior
+	  git checkout <archivo>
+	  # volver a la ultima version completa
+	  git reset
+	  # para revisar el historial de commits
+	  git log --graph
+	  # vista rapida de los ultimos 3 commits
+	  git log --graph --pretty=oneline
+	  ```
+	-
