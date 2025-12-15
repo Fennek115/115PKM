@@ -38,6 +38,14 @@
 	  # para revisar el historial de commits
 	  git log --graph
 	  # vista rapida de los ultimos 3 commits
-	  git log --graph --pretty=oneline
+	  git log --graph --pretty=oneline	
 	  ```
+	- Alias
+		- ![image.png](../assets/image_1765761386286_0.png)
+	- ```bash
+	  # Representación de arbol en nuestras ramas
+	  git config --global alias.tree 'log --graph --decorate --all --oneline'
+	  ```
+- .gitignore
+	- A veces puede suceder que no queremos incluir ciertos archivos en un commit, ya sea porque son temporales, exponen información delicada, o simplemente no son relevantes para el proyecto.
 	-
