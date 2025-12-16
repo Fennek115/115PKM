@@ -48,4 +48,55 @@
 	  ```
 - .gitignore
 	- A veces puede suceder que no queremos incluir ciertos archivos en un commit, ya sea porque son temporales, exponen información delicada, o simplemente no son relevantes para el proyecto.
-	-
+	- Es un archivo de texto plano que le dice a **Git** qué archivos o carpetas **ignorar** en el proyecto.
+	- Previene que archivos temporales, builds, logs o información sensible sean confirmados (committed) accidentalmente.
+	- **Reglas de Sintaxis** #CheatSheet
+		- **Comentarios**: Las líneas que empiezan con `#` son ignoradas.
+		  `# Esto es un comentario`
+		- **Archivos específicos**: Escribe el nombre completo.
+		  `archivo.txt`
+	- **Wildcards (Comodines)**:
+	  `*`: Coincide con cero o más caracteres.
+	  `*.log` (Ignora todos los archivos .log)
+	  `?`: Coincide con un solo carácter.
+	  `debug?.log` (Ignora debug1.log, debugA.log)
+	- **Directorios**: Terminan con una barra `/`.
+	  `temp/` (Ignora todo el contenido de la carpeta temp)
+	- **Negación**: Usa `!` para *no* ignorar un archivo, incluso si una regla anterior lo ignora.
+	  `!importante.log` (No ignorar este archivo específico)
+	- **Raíz del proyecto**: Usa `/` al inicio para asegurar que solo coincida en la raíz.
+	  `/todo` (Ignora el archivo 'todo' en la raíz, pero no 'src/todo')
+	- **Comandos Clave** #Terminal
+	- **Problema común**: Agregué un archivo al .gitignore pero Git lo sigue rastreando.
+	- **Solución**: Debes borrarlo de la caché (index) de Git.
+		- ```bash
+		  git rm -r --cached .
+		  git add .
+		  git commit -m "Fix: actualizar .gitignore"
+		  ```
+	- Útil para ignorar archivos del sistema operativo en *todos* tus proyectos (ej. `.DS_Store` o `Thumbs.db`).
+	- ```bash
+	  # Dependencias
+	  node_modules/
+	  venv/
+	  
+	  # Compilados y Builds
+	  dist/
+	  build/
+	  *.o
+	  *.exe
+	  
+	  # Variables de entorno (IMPORTANTE)
+	  .env
+	  
+	  # IDEs y OS
+	  .vscode/
+	  .idea/
+	  .DS_Store
+	  ```
+	- link [recurso de template](https://www.toptal.com/developers/gitignore)
+- git diff
+	- ```bash
+	  #para ver la diferencia de los archivos
+	  git diff a/archivo b/archivo
+	  ```

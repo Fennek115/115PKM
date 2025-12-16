@@ -1,0 +1,41 @@
+# [[Roadmap Ciberseguridad]] 🛡️
+	- ## 🎯 Objetivo Principal
+		- Convertirme en un Ingeniero de Ciberseguridad empleable y práctico antes de graduarme.
+		- **Foco:** Cloud Security, DevSecOps y Automatización.
+	-
+	- ## 📅 Fase 1: Infraestructura y "Desbloqueo" (Semana 1)
+		- TODO Resolver el bloqueo de Microsoft (Cuenta nueva + GitHub Pack) #admin
+		- TODO Canjear beneficios clave del [[GitHub Student Pack]] #recursos
+			- Azure ($100 créditos)
+			- Namecheap (Dominio .me gratis)
+			- Educative.io (6 meses gratis)
+			- Snyk (Cuenta gratis)
+		- TODO Configurar página personal con GitHub Pages + Jekyll #portfolio
+			- *Nota: No complicarse con el diseño, prioridad al contenido.*
+	-
+	- ## 🧠 Fase 2: Certificaciones y Fundamentos (Mes 1)
+		- ### [[Certificación GitHub Foundations]]
+			- TODO Canjear voucher de examen (si disponible) #cert
+			- TODO Estudiar ruta de aprendizaje en Microsoft Learn
+			- TODO Practicar gestión de repositorios y ramas (branching)
+		- ### [[Curso Educative.io]]
+			- TODO Iniciar curso "Web Application Penetration Testing" #estudio
+			- TODO Completar módulo de OWASP Top 10
+	-
+	- ## 🛠️ Fase 3: Proyectos "Showcase" (Mes 2)
+		- ### [[Proyecto 1: Azure Honeypot]] 🍯
+			- TODO Crear VM en Azure (Ubuntu) #azure
+			- TODO Instalar T-Pot (colección de honeypots)
+			- TODO Configurar Network Security Group (abrir puertos al mundo)
+			- TODO Recopilar logs de 24 horas de ataques
+			- TODO Escribir artículo en el Portfolio: "Análisis de ataques reales a mi servidor"
+		- ### [[Proyecto 2: Pipeline DevSecOps]] 🔄
+			- TODO Crear repo con código vulnerable (ej. Python simple) #github-actions
+			- TODO Configurar GitHub Action básico de CI
+			- TODO Integrar [[Snyk]] en el pipeline para escaneo automático
+			- TODO Escribir artículo: "Cómo automaticé la seguridad en CI/CD"
+	-
+	- ## 🚀 Fase 4: Empleabilidad (Continuo)
+		- LATER Actualizar LinkedIn con las nuevas habilidades (Azure, GitHub Actions, Snyk) #job-hunt
+		- LATER Crear CV en formato "Acción-Resultado" destacando los proyectos
+		- LATER Aplicar a ofertas Junior/Trainee (mínimo 5 por semana)
