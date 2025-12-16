@@ -100,3 +100,18 @@
 	  #para ver la diferencia de los archivos
 	  git diff a/archivo b/archivo
 	  ```
+- git checkout
+	- **Concepto Clave**: Este comando es polivalente (tiene dos funciones distintas) dependiendo de qué argumento le pases.
+	- **1. Función "Deshacer" (Nivel Archivo)**
+		- Sintaxis: `git checkout <nombre_archivo>`
+		- Acción: Descarta los cambios locales en ese archivo específico, regresándolo al estado del último commit.
+		- *Ejemplo*: `git checkout hello.py` (Borra lo que escribiste hoy en ese archivo).
+	- **2. Función "Máquina del Tiempo" (Nivel Proyecto)**
+		- Sintaxis: `git checkout <hash_del_commit>`
+		- Acción: Mueve el puntero **HEAD** a un momento pasado. Todo el directorio de trabajo cambia para reflejar esa "foto" antigua.
+		- Estado **Detached HEAD**: Ocurre cuando HEAD apunta a un commit específico y no a una rama (main). Estás "flotando" en el pasado.
+		- *Ejemplo*: `git checkout 50a554c` (Viajas al primer commit).
+	- **Cómo volver al presente**
+		- Sintaxis: `git checkout <nombre_rama>`
+		- Acción: Vuelve a colocar el puntero HEAD en la punta de la rama actual.
+		- *Ejemplo*: `git checkout main`
