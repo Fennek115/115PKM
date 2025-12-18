@@ -4,7 +4,7 @@
 		- **Foco:** Cloud Security, DevSecOps y Automatización.
 	-
 	- ## 📅 Fase 1: Infraestructura y "Desbloqueo" (Semana 1)
-		- TODO Resolver el bloqueo de Microsoft (Cuenta nueva + GitHub Pack) #admin
+		- DONE Resolver el bloqueo de Microsoft (Cuenta nueva + GitHub Pack) #admin
 		- TODO Canjear beneficios clave del [[GitHub Student Pack]] #recursos
 			- Azure ($100 créditos)
 			- Namecheap (Dominio .me gratis)

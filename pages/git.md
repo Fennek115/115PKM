@@ -40,6 +40,14 @@
 	  # vista rapida de los ultimos 3 commits
 	  git log --graph --pretty=oneline	
 	  ```
+	- git reset --hard
+		- es una variante radical del comando "git reset" con esto podemos eliminar todo lo que se haya hecho después del punto de retorno que le inidiquemos
+		- es peligroso porque borra permanentemente cualquier cambio posterior al punto de reseteo
+		- **reflog** Este comando nos muestra el historial completo
+		  de todas las acciones realizadas en nuestro repositorio,
+		  incluidos los commits que creíamos haber eliminado con
+		  el comando git reset --hard.
+		-
 	- Alias
 		- ![image.png](../assets/image_1765761386286_0.png)
 	- ```bash
@@ -115,3 +123,33 @@
 		- Sintaxis: `git checkout <nombre_rama>`
 		- Acción: Vuelve a colocar el puntero HEAD en la punta de la rama actual.
 		- *Ejemplo*: `git checkout main`
+- Git Tag
+	- ```bash
+	  git tag
+	  git tag <nombre_tag>
+	  git tag <nombre_tag> <hash_commit>
+	  git show <nombre_tag>
+	  git checkout <nombre_tag>
+	  # borrar un tag
+	  git tag -d <nombre_tag>
+	  ```
+	- el tag se agrega al commit
+	- git tag, sin argumentos.
+	  Para movernos entre diferentes commits usando tags,
+	  podemos emplear git checkout seguido del nombre del
+	  tag, por ejemplo: git checkout <nombre del tag>.
+	- Los tags también nos permiten movernos rápidamente
+	  a puntos específicos de nuestro repositorio sin tener
+	  que buscar el hash del commit. Esto es especialmente
+	  útil cuando queremos solucionar errores en versiones
+	  anteriores, o trabajar sobre el código fuente de una
+	  versión específica.
+- Git Branch
+	- ```bash
+	  git branch
+	  git branch <nombre_rama>
+	  git switch <nombre_rama>
+	  git checkout -b <nombre_rama>
+	  git switch -c <nombre_rama>
+	  ```
+-
