@@ -214,4 +214,44 @@
 	- Nos sirve para desplazarnos entre ramas sin tener que hacer commit, *stash* nos permite guardar temporalmente los cambios realizados en un archivo, o conjunto de archivos, sin tener que hacer un commit
 	- Cuando usamos **stash** git guarda una instantánea de los archivos modificados y los almacena en una pila, para que podamos trabajar en otra rama sin perder nuestro progreso.
 	- Los cambios guardados con stash se pueden aplicar posteriormente en la misma rama, o en otra diferente
-	-
+	- ```bash
+	  # para guardar cambios temporalmente
+	  git stash
+	  # aplica los cambios del stash y elimina los de la lista
+	  git stash pop
+	  # si preferimos los de la lista
+	  git stash apply
+	  git stash list
+	  # para borrar uno por uno
+	  git stash drop <stash>
+	  # para borrar todo
+	  git stash clear
+	  ```
+- ### reintegración de ramas
+	- ```bash
+	  # para comparar cambios
+	  git diff <nombre de la rama>
+	  # para agregar los cambios
+	  git merge <nombre de la rama a integrar>
+	  ```
+	- ```bash
+	  #borrar ramas
+	  git branch --delete <nombre_rama>
+	  git branch -d <nombre_rama>
+	  ```
+		- si es necesario volver a trabajar
+		  en la rama eliminada, se pueden recuperar sus commits
+		  usando el ya conocido comando **git reflog**
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
